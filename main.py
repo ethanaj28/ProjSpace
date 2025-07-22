@@ -55,4 +55,3 @@ while True:
 
     else:
         print('\nPlease select the correct budget type.\n')
-
