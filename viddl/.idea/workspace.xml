@@ -135,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EGC 1.0 EJ - 7/25/25" />
     <option name="LAST_COMMIT_MESSAGE" value="" />
+
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/viddl$main.coverage" NAME="main Coverage Results" MODIFIED="1754013539917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
