@@ -57,22 +57,34 @@ class Closet:
     def add_new_console(self):
         name = input('What is the name of the console? ')
         manufacturer = input('Who manufactured the console? ')
-        year = int(input('What year did you get the console? '))
+        while True:
+            try:
+                year = int(input('What year did you get the console? '))
+                break
+            except ValueError:
+                print('\nInvalid Input. Please enter a numeric value.')
         # Initializing the new console variable
         new_console = Console(name, manufacturer, year)
         # Adding new console to the closet
         self.add_console(new_console)
-        print('New Console added.')
+        print('\nNew Console added.')
         # Print new console details
         new_console.console_details()
 
     def add_new_game(self):
         title = input('What is the title of the game? ')
         studio = input('Who created the game? ')
-        year = int(input('What year did you get the game? '))
+        #@yakin16 suggested that I catch the error. 7/31/2025
+        #Didn't know how to accomplish that, but was successful in trials.
+        while True:
+            try:
+                year = int(input('What year did you get the game? '))
+                break
+            except ValueError:
+                print('\nInvalid Input. Please enter a numeric value.')
         new_game = Game(title, studio, year)
         self.add_game(new_game)
-        print('New Game added.')
+        print('\nNew Game added.')
         new_game.game_details()
 
 def main():
